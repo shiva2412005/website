@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>LEARNING PARADISE SCHOOL</title>
+<style>
+  /* CSS Reset */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin:0; padding:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: #f9fafc;
+    color: #333;
+  }
+  header {
+    background: #014f86;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  nav {
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  nav a:hover,
+  nav a:focus {
+    color: #fbbf24; /* amber-400 */
+    outline: none;
+  }
+
+  .hero {
+    background: url('https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqMPIG3oAgfAGw68cvaYRC0ODs6MILN3GiD5AlGmYf2KRAs5De9QPckyx2VvHdf4aq6-ZPVTiomLQO2L8pPcgvKztMKhon_xIU2_7F1TIgFIpIpbICqf8QlQ_xemOCGTBRHyzv4iQ=s1360-w1360-h1020-rw') center/cover no-repeat;
+    height: 320px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    text-align: center;
+    position: relative;
+    
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(1, 79, 134, 0.7);
+    z-index: 0;
+  }
+  .hero h2 {
+    font-size: 2rem;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+    z-index: 1;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  section {
+    padding: 2rem 1.5rem;
+    max-width: 900px;
+    margin: 1rem auto;
+  }
+  section h3 {
+    color: #014f86;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+  }
+  section p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: #0a0a15;
+  }
+
+  .about-image {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  }
+
+  .btn-admissions {
+    display: inline-block;
+    background: #fbbf24;
+    color: #014f86;
+    padding: 0.7rem 1.2rem;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  .btn-admissions:hover,
+  .btn-admissions:focus {
+    background-color: #d18e0a;
+    outline: none;
+  }
+
+  footer {
+    background: #012d4a;
+    color: #ccc;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  /* Responsive Nav for small screen */
+  @media (max-width: 450px) {
+    nav a {
+      margin: 0 0.5rem;
+      font-size: 0.9rem;
+    }
+    .hero h2 {
+      font-size: 1.5rem;
+    }
+    .hero p {
+      font-size: 1rem;
+    }
+    section {
+      padding: 1rem 1rem;
+      margin: 0.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>Learning Paradise School</h1>
+    <nav role="navigation" aria-label="Main Navigation">
+      <a href="#about">About Us</a>
+      <a href="#admissions">Admissions</a>
+      <a href="#academics">Academics</a>
+      <a href="#contact">Contact</a>
+      <a href="#student">Student</a>
+      <a href="#result">Result </a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" aria-label="Welcome Banner">
+  <h2>Welcome to Learning Paradise School</h2>
+  <p>Where learning meets excellence and every student shines.</p>
+</section>
+
+<section id="about" aria-labelledby="about-heading">
+  <h3 id="about-heading">About Us</h3>
+  <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4noCas7eMnQeGO3F8mD4qY-wSuVBP9IFAnTHl74sVhsKO34b5-bmlXRleTrt3HStSGEhBPuTYsFnpJ9mEC6pH6B1p-d8UNYlZwteDJrTyRxjPQe6ANquS7KHvZhhYy2W_Sy89ppQXA=s1360-w1360-h1020-rw" alt="Students in classroom" class="about-image" />
+  <p>Learning Paradise School is dedicated to fostering a nurturing and dynamic environment where students grow academically, socially, and personally. Our experienced faculty and state-of-the-art facilities provide a strong foundation to prepare students for success in higher education and beyond.</p>
+</section>
+
+<section id="admissions" aria-labelledby="admissions-heading">
+  <h3 id="admissions-heading">Admissions</h3>
+  <p>Join our community of motivated learners. Admissions for the next academic year are open. Submit your application to become a part of the Sunshine family.</p>
+  <a href="#contact" class="btn-admissions" role="button">Apply Now</a>
+</section>
+
+<section id="academics" aria-labelledby="academics-heading">
+  <h3 id="academics-heading">Academics</h3>
+  <p>We offer a comprehensive curriculum that challenges students and promotes intellectual curiosity. Explore our programs in Science, Mathematics, Arts, and Humanities designed to cater to diverse interests and career paths.</p>
+</section>
+
+<section id="contact" aria-labelledby="contact-heading">
+  <h3 id="contact-heading">Contact</h3>
+  <p>If you have any questions or want to visit us, reach out to our office:</p>
+  <address style="max-width: 600px; margin: auto; font-style: normal; text-align: center;">
+    Learning Paradise School<br />
+    Rewa Road Bajrangpuram Road no. 2 <br />
+    Muzaffarpur, Bihar, 843113<br />
+    Phone: <a href="tel:+1234567890">+91 9934980792</a><br />
+    Email: <a href="mailto:info@learning paradise school.edu">learningparadise.org</a>
+  </address>
+</section>
+
+<footer>
+  &copy; 2000 Learning Paradise School. All Rights Reserved.
+</footer>
+
+</body>
+</html>
+
+```
+
